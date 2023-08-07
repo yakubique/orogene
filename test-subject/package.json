@@ -13,8 +13,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@backstage/cli": "^0.22.9",
+    "@backstage/codemods": "^0.1.45",
+    "@changesets/cli": "^2.26.2",
+    "@manypkg/get-packages": "^2.2.0",
     "babel": "^6.23.0",
+    "backstage": "^0.0.2",
     "lodash": "^4.17.21",
+    "minimist": "^1.2.8",
+    "prettier": "^3.0.1",
     "react": "^18.2.0",
     "typescript": "^5.1.6",
     "vue.js": "^0.3.2"
