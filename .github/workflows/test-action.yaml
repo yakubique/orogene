@@ -1,0 +1,22 @@
+name: Test Action
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        uses: yakubique/orogene@v0.0.1
+        with:
+          root: "./test-subject"
+
+      - name: Re-install dependencies
+        uses: yakubique/orogene@v0.0.1
+        with:
+          command: reapply
+          root: "./test-subject"

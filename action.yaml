@@ -1,0 +1,26 @@
+name: Orogene Apply/ReApply
+description: Install `node-modules` with the power of Rust
+author: "Vladimir <opa_oz> Levin"
+branding:
+  icon: clipboard
+  color: purple
+inputs:
+  root:
+    description: Root folder (folder with `package.json`, default="./")
+    required: false
+    default: "./"
+  command:
+    description: Command to use (`apply` for install, `reapply` to re-install, default="apply")
+    required: false
+    default: "apply"
+  registry:
+    description: Custom NPM registry (default="https://registry.npmjs.org")
+    required: false
+    default: "https://registry.npmjs.org"
+runs:
+  using: docker
+  image: Dockerfile
+  env:
+    YA_ACTION: "${{ inputs.command }}"
+    YA_ROOT: "${{ inputs.root }}"
+    YA_REGISTRY: "${{ inputs.registry }}"
