@@ -1,4 +1,4 @@
-# Orogene Apply/ReApply
+# Orogene Apply
 
 🥳Based on [orogene](https://github.com/orogene/orogene/tree/main) project.
 
@@ -12,15 +12,7 @@
   uses: yakubique/orogene@v0.0.1
 ```
 
-2. Re-install dependencies
-```yaml
-- name: Re-install dependencies
-  uses: yakubique/orogene@v0.0.1
-  with:
-    command: reapply
-```
-
-3. Install from different folder (folder with `package.json`)
+2. Install from different folder (folder with `package.json`)
 ```yaml
 - name: Install dependencies
   uses: yakubique/orogene@v0.0.1
@@ -28,7 +20,7 @@
     root: "./packages/my-package"
 ```
 
-4. Install from different npm registry:
+3Install from different npm registry:
 ```yaml
 - name: Install dependencies
   uses: yakubique/orogene@v0.0.1

@@ -13,6 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "babel": "^6.23.0",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "typescript": "^5.1.6",
+    "vue.js": "^0.3.2"
   }
 }
