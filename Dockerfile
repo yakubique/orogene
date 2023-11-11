@@ -4,7 +4,7 @@ LABEL authors="Vladimir <opa_oz> Levin"
 RUN apt-get update \
     && apt-get install -y ca-certificates
 
-RUN npm install -g orogene@0.3.26
+RUN npm install -g orogene@0.3.27
 RUN oro ping
 
 COPY entrypoint.sh /entrypoint.sh
