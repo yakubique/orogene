@@ -10,6 +10,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install dependencies
-        uses: yakubique/orogene@v0.3.22
+        uses: yakubique/orogene@v0.3.23
         with:
           root: "./test-subject"

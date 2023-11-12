@@ -9,13 +9,13 @@
 1. Install dependencies:
 ```yaml
 - name: Install dependencies
-  uses: yakubique/orogene@v0.3.22
+  uses: yakubique/orogene@v0.3.23
 ```
 
 2. Install from different folder (folder with `package.json`)
 ```yaml
 - name: Install dependencies
-  uses: yakubique/orogene@v0.3.22
+  uses: yakubique/orogene@v0.3.23
   with:
     root: "./packages/my-package"
 ```
@@ -23,7 +23,7 @@
 3Install from different npm registry:
 ```yaml
 - name: Install dependencies
-  uses: yakubique/orogene@v0.3.22
+  uses: yakubique/orogene@v0.3.23
   with:
     registry: "https://npm.on-premise.company"
 ```
